@@ -47,7 +47,7 @@ function loadLabeledImages() {
   return Promise.all(
     labels.map(async label => {
       const descriptions = [];
-      for (let i = 1; i <= 2; i++) {
+      for (let i = 1; i <= 3; i++) {
         const img = await faceapi.fetchImage(
           `https://raw.githubusercontent.com/sasa10g/face-recognition-faceapi/master/labeled_images/${label}/${i}.jpg`
         );
